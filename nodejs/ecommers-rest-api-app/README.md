@@ -67,3 +67,17 @@ TS config file:
   }
 }
 ```
+
+Config `package.json` run command:
+
+```json
+{
++   "type": "module",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
++    "dev": "node --import=tsx --watch ./src/index.ts"
+  },
+}
+```
+
+**Note:** _NodeJs_ by default provides these features, we don't need to install `nodemon` etc.
