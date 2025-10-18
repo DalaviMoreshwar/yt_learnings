@@ -18,14 +18,14 @@
 
 ### Tech Stacks:
 
-![nodejs](image.png)
+![nodejs](./public/imgs/image.png)
 
-![expressjs](image-1.png)
+![expressjs](./public/imgs/image-1.png)
 
-![typescript](image-2.png)
+![typescript](./public/imgs/image-2.png)
 
-![postgresql](image-3.png)
+![postgresql](./public/imgs/image-3.png)
 
-![genezio](image-4.png)
+![genezio](./public/imgs/image-4.png)
 
-![drizzle-orm](image-5.png)
+![drizzle-orm](./public/imgs/image-5.png)
