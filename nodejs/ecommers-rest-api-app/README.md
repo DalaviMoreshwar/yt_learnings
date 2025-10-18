@@ -2,9 +2,7 @@
 
 ## NodeJS
 
-### <span style="color: #9c9c9c">nodejs: 01.</span> [Build Scalable REST API with Node Js](https://youtu.be/RDM-nk5f4SE)
-
-[GitHub Codebase](https://github.com/DalaviMoreshwar/yt_learnings/nodejs)
+### <span style="color: #9c9c9c"><u>nodejs: 01.</u></span> [Build Scalable REST API with Node Js](https://youtu.be/RDM-nk5f4SE)
 
 ### Learning goals:
 
@@ -30,3 +28,42 @@
 <img width="40%" src="./../../public/imgs/image-4.png" alt="logo"/>
   <img width="40%" src="./../../public/imgs/image-5.png" alt="logo"/>
 </p>
+
+### Install Dependancies:
+
+Express:
+
+```bash
+npm install express
+```
+
+TypeScript and Express Types:
+
+```bash
+npm install -D typescript tsx @types/express
+```
+
+TS config file:
+
+```json
+{
+  "compilerOptions": {
+    "module": "esnext", // use ESNEXT for ESM
+    "target": "es2020", // target moden ECMAScript versions
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "./dist", // output directory of compiled files
+    "strict": true, // enable strict type chaking options
+    "skipLibCheck": true, //skip type chaking of declaration files
+    "resolveJsonModule": true, // include json imports
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": false, // allow emitting output
+    "isolatedModules": true, // required for using ESM modules
+    "baseUrl": ".", // allow absolute imports relative to project root
+    "paths": {
+      "*": ["node-modules/*"]
+    }
+  }
+}
+```

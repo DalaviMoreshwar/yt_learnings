@@ -7,4 +7,4 @@
 **Resources:**
 
 - [Youtube](https://youtu.be/RDM-nk5f4SE)
-- [Codebase](https://github.com/DalaviMoreshwar/yt_learnings/nodejs)
+- [Codebase](https://github.com/DalaviMoreshwar/yt_learnings/tree/main/nodejs/ecommers-rest-api-app)
