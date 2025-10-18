@@ -18,14 +18,14 @@
 
 ### Tech Stacks:
 
-<p align="center" width="100%" style="background-size: cover;">
-  <img width="25%" src="./public/imgs/image.png" alt="logo"/>
-  <img width="25%" src="./public/imgs/image-1.png" alt="logo"/>
-  <img width="25%" src="./public/imgs/image-2.png" alt="logo"/>
-  <img width="25%" src="./public/imgs/image-3.png" alt="logo"/>
+<p align="center" style="margin: 1rem" width="100%" style="background-size: cover;">
+  <img width="20%" src="./public/imgs/image.png" alt="logo"/>
+  <img width="20%" src="./public/imgs/image-1.png" alt="logo"/>
+  <img width="20%" src="./public/imgs/image-2.png" alt="logo"/>
+  <img width="20%" src="./public/imgs/image-3.png" alt="logo"/>
 </p>
 
-<p align="center" width="100%">
-<img width="50%" src="./public/imgs/image-4.png" alt="logo"/>
-  <img width="50%" src="./public/imgs/image-5.png" alt="logo"/>
+<p align="center" style="margin: 1rem">
+<img width="40%" src="./public/imgs/image-4.png" alt="logo"/>
+  <img width="40%" src="./public/imgs/image-5.png" alt="logo"/>
 </p>
