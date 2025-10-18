@@ -18,14 +18,14 @@
 
 ### Tech Stacks:
 
-![nodejs](./public/imgs/image.png)
+<p align="center" width="100%" style="background-size: cover;">
+  <img width="25%" src="./public/imgs/image.png" alt="logo"/>
+  <img width="25%" src="./public/imgs/image-1.png" alt="logo"/>
+  <img width="25%" src="./public/imgs/image-2.png" alt="logo"/>
+  <img width="25%" src="./public/imgs/image-3.png" alt="logo"/>
+</p>
 
-![expressjs](./public/imgs/image-1.png)
-
-![typescript](./public/imgs/image-2.png)
-
-![postgresql](./public/imgs/image-3.png)
-
-![genezio](./public/imgs/image-4.png)
-
-![drizzle-orm](./public/imgs/image-5.png)
+<p align="center" width="100%">
+<img width="50%" src="./public/imgs/image-4.png" alt="logo"/>
+  <img width="50%" src="./public/imgs/image-5.png" alt="logo"/>
+</p>
