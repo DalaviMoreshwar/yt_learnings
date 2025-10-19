@@ -82,3 +82,34 @@ Config `package.json` run command:
 ```
 
 **Note:** _NodeJs_ by default provides these features, we don't need to install `nodemon` etc.
+
+### Middlewares:
+
+A **middleware** is a function that has access to the request (req), response (res), and the next middleware function in the application’s request-response cycle.
+
+It’s used to process requests before they reach the route handler or after the response is sent.
+
+_**Middleware** allows us to **add additional functionalities** between controllers and routers as we handle the requset._
+
+**Middleware Signature:**
+
+```typescript
+function middlewareFn(req, res, next) {
+  // Do something with req or res
+  next(); // Pass control to the next middlewares
+}
+```
+
+**Use Cases:**
+
+1. **<u>Parsing request bodies:</u>** Parses `json` payloads.
+
+```typescript
+app.use(express.json());
+```
+
+2. **<u>URL encoded:</u>** Returns middleware that only parses urlencoded bodies and only looks at requests where the Content-Type header matches the type option.
+
+```typescript
+app.use(urlencoded({ extended: false }));
+```
