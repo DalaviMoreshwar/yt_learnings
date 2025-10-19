@@ -1,0 +1,18 @@
+@baseurl = http://localhost:2300
+
+GET {{baseurl}}/
+
+###
+GET {{baseurl}}/products
+
+###
+GET {{baseurl}}/products/123
+
+###
+POST {{baseurl}}/products
+Content-Type: application/json
+
+{
+    name: "mackbook air",
+    price: "$99.9",
+}

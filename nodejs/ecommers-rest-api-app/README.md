@@ -75,7 +75,8 @@ Config `package.json` run command:
 +   "type": "module",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
-+    "dev": "node --import=tsx --watch ./src/index.ts"
++    "dev": "node --import=tsx --watch ./src/index.ts",
++    "build": "tsc"
   },
 }
 ```

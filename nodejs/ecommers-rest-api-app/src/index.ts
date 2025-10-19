@@ -1,11 +1,14 @@
-import express from "express";
+import express, { Router } from "express";
+import productRoutes from "./routes/products";
 
-const PORT = 2301;
+const PORT = process.env.PORT;
 const app = express();
 
-app.use("/", (req, res) => {
+app.get("/", (req, res) => {
   res.json({ message: "HELLO" });
 });
+
+app.use("/products", productRoutes);
 
 app.listen(PORT, () => {
   console.log(`server initiated at port ${PORT}`);
