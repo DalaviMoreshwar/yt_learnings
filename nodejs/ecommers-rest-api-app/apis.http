@@ -1,18 +1,33 @@
 @baseurl = http://localhost:2300
 
-GET {{baseurl}}/
-
+# GET ALL PRODUCTS
 ###
 GET {{baseurl}}/products
 
+# GET A PRODUCT
 ###
 GET {{baseurl}}/products/123
 
+# CREATE PRODUCT
 ###
 POST {{baseurl}}/products
 Content-Type: application/json
 
 {
-    name: "mackbook air",
-    price: "$99.9",
+    "name": "mackbook air",
+    "price": "$99.9"
 }
+
+# UPDATE PRODUCT
+###
+PUT {{baseurl}}/products
+Content-Type: application/json
+
+{
+    "name": "mackbook air",
+    "price": "$199.9"
+}
+
+# DELETE PRODUCT
+### 
+DELETE {{baseurl}}/products/123

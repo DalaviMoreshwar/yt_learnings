@@ -1,12 +1,10 @@
-import express, { Router } from "express";
+import express from "express";
 import productRoutes from "./routes/products";
 
 const PORT = process.env.PORT;
 const app = express();
 
-app.get("/", (req, res) => {
-  res.json({ message: "HELLO" });
-});
+app.use(express.json());
 
 app.use("/products", productRoutes);
 
