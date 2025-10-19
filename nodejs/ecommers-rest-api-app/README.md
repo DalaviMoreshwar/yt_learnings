@@ -14,6 +14,8 @@
 - Request validation and error handling
 - Deploy to production on **Genezio**
 
+---
+
 ### Tech Stacks:
 
 <p align="center" style="margin: 1rem" width="100%" style="background-size: cover;">
@@ -28,6 +30,8 @@
 <img width="40%" src="./../../public/imgs/image-4.png" alt="logo"/>
   <img width="40%" src="./../../public/imgs/image-5.png" alt="logo"/>
 </p>
+
+---
 
 ### Install Dependancies:
 
@@ -75,13 +79,15 @@ Config `package.json` run command:
 +   "type": "module",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
-+    "dev": "node --import=tsx --watch ./src/index.ts",
++    "dev": "node --import=tsx --watch ./src/app.ts",
 +    "build": "tsc"
   },
 }
 ```
 
 **Note:** _NodeJs_ by default provides these features, we don't need to install `nodemon` etc.
+
+---
 
 ### Middlewares:
 
@@ -113,3 +119,7 @@ app.use(express.json());
 ```typescript
 app.use(urlencoded({ extended: false }));
 ```
+
+---
+
+### Database & Drizzle ORM
