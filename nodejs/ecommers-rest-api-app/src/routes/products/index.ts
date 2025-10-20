@@ -16,7 +16,7 @@ productRoutes.get("/:id", getProductById);
 
 productRoutes.post("/", createProduct);
 
-productRoutes.put("/", updateProduct);
+productRoutes.put("/:id", updateProduct);
 
 productRoutes.delete("/:id", deleteProduct);
 
