@@ -11,8 +11,8 @@ export const productsTable = pgTable("products", {
   id: integer().primaryKey().generatedAlwaysAsIdentity(),
   title: varchar({ length: 255 }).notNull(),
   price: doublePrecision().notNull(),
-  description: text().notNull(),
+  description: text(),
 });
 
 export const createProductSchema = createInsertSchema(productsTable);
-export const updateProductSchema = createInsertSchema(productsTable);
+export const updateProductSchema = createInsertSchema(productsTable).partial();
