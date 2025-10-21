@@ -1,6 +1,5 @@
 import { NextFunction, Request, Response } from "express";
 import _ from "lodash";
-import { createProductSchema } from "./../db/productSchema";
 import z, { ZodError } from "zod";
 
 export function validateData(schema: z.ZodObject<any, any>) {

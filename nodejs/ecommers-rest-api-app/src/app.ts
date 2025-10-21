@@ -1,6 +1,6 @@
 import express, { urlencoded } from "express";
-import productRoutes from "./routes/products";
-import authRouter from "./routes/auth";
+import productRoutes from "./routes/products/index.js";
+import authRouter from "./routes/auth/index.js";
 
 const PORT = process.env.PORT;
 const app = express();
