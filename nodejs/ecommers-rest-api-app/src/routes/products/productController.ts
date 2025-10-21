@@ -38,6 +38,7 @@ export async function createProduct(
   next: NextFunction
 ) {
   try {
+    console.log(`user id: ${req.userId}`);
     const [product] = await db
       .insert(productsTable)
       .values(req.cleanBody)

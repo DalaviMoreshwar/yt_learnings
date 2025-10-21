@@ -5,14 +5,18 @@ meta {
 }
 
 put {
-  url: {{baseURL}}/products/9
+  url: {{baseURL}}/products/1
   body: json
   auth: inherit
 }
 
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIwLCJlbWFpbCI6InVzZXIyQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc2MTA0NjQ0MywiZXhwIjoxNzYxMTMyODQzfQ.lILZcMMCYppX0N3UTpwnnb_tpVNVvBNbbuaH_0y6Ylc
+}
+
 body:json {
   {
-    "description": "new description"
+    "description": "new description 11"
   }
 }
 

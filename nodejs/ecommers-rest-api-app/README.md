@@ -137,3 +137,11 @@ drizzle-zod is a plugin for [Drizzle ORM](https://github.com/drizzle-team/drizzl
 ```bash
 npm install drizzle-zod
 ```
+
+### Authentication & Autherization
+
+to encrypt password:
+
+```bash
+npm install bcryptjs
+```

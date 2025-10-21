@@ -31,3 +31,16 @@ Content-Type: application/json
 # DELETE PRODUCT
 ### 
 DELETE {{baseurl}}/products/123
+
+
+###
+# REGISTER USER
+POST {{baseurl}}/auth/register
+Content-Type: application/json
+
+{
+  "email": "user1@gmail.com",
+  "password": "pass",
+  "name": "user",
+  "address": "st1, asldkasao"
+}
