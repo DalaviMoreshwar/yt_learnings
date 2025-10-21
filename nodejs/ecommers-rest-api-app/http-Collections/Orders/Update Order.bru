@@ -1,11 +1,11 @@
 meta {
-  name: Create Product
+  name: Update Order
   type: http
-  seq: 3
+  seq: 4
 }
 
-post {
-  url: {{baseURL}}/products
+put {
+  url: {{baseURL}}/orders/4
   body: json
   auth: inherit
 }
@@ -16,11 +16,7 @@ headers {
 
 body:json {
   {
-    "id": 1,
-    "title": "Sony MAGA",
-    "price": 1229,
-    "description": "",
-    "balance": 9333333
+    "status": "In Transit"
   }
 }
 

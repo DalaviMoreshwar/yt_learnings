@@ -1,27 +1,17 @@
 meta {
-  name: Create Product
+  name: List orders
   type: http
-  seq: 3
+  seq: 2
 }
 
-post {
-  url: {{baseURL}}/products
-  body: json
+get {
+  url: {{baseURL}}/orders
+  body: none
   auth: inherit
 }
 
 headers {
   Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImVtYWlsIjoidXNlcjFAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzYxMDU0NDY0LCJleHAiOjE3NjExNDA4NjR9.die62j4RGdfOc-HLUUG-R7OWezrVy3l5-x112SjUnRs
-}
-
-body:json {
-  {
-    "id": 1,
-    "title": "Sony MAGA",
-    "price": 1229,
-    "description": "",
-    "balance": 9333333
-  }
 }
 
 settings {

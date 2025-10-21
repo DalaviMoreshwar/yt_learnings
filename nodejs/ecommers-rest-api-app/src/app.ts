@@ -1,6 +1,7 @@
 import express, { urlencoded } from "express";
 import productRoutes from "./routes/products/index.js";
-import authRouter from "./routes/auth/index.js";
+import authRoutes from "./routes/auth/index.js";
+import ordersRoutes from "./routes/orders/index.js";
 
 const PORT = process.env.PORT;
 const app = express();
@@ -11,7 +12,9 @@ app.use(express.json());
 
 app.use("/products", productRoutes);
 
-app.use("/auth", authRouter);
+app.use("/auth", authRoutes);
+
+app.use("/orders", ordersRoutes);
 
 app.listen(PORT, () => {
   console.log(`server initiated at port ${PORT}`);
