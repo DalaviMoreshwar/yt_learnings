@@ -15,4 +15,4 @@ export const productsTable = pgTable("products", {
 });
 
 export const createProductSchema = createInsertSchema(productsTable);
-export const updateProductSchema = createInsertSchema(productsTable);
+export const updateProductSchema = createInsertSchema(productsTable).partial();
