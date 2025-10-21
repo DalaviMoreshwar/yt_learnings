@@ -1,0 +1,16 @@
+meta {
+  name: A Product
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseURL}}/products/3
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

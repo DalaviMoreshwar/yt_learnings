@@ -123,3 +123,17 @@ app.use(urlencoded({ extended: false }));
 ---
 
 ### Database & Drizzle ORM
+
+We can connect `postgresql` database in a multiple ways
+
+### Data Validation with ZOD
+
+Handle the query paramete validations. Add a validation rules
+
+#### **drizzle-zod**
+
+drizzle-zod is a plugin for [Drizzle ORM](https://github.com/drizzle-team/drizzle-orm) that allows you to generate [Zod](https://github.com/colinhacks/zod) schemas from Drizzle ORM schemas.
+
+```bash
+npm install drizzle-zod
+```

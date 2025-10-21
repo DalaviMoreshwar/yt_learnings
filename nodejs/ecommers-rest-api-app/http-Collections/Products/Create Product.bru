@@ -1,0 +1,24 @@
+meta {
+  name: Create Product
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseURL}}/products
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "title": "Dell Aspiron",
+    "price": "1449",
+    "description": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

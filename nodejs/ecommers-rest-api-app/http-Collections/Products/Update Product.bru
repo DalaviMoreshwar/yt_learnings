@@ -1,0 +1,25 @@
+meta {
+  name: Update Product
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseURL}}/products/9
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "balance": 223,
+    "title": "Dell Aspiron",
+    "price": "2099",
+    "description": "11"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

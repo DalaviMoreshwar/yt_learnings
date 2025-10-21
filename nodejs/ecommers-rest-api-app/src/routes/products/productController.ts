@@ -1,7 +1,8 @@
 import { NextFunction, Request, Response } from "express";
 import { db } from "./../../db/index";
-import { productsTable } from "./../../db/productSchema";
+import { productsTable, createProductSchema } from "./../../db/productSchema";
 import { eq } from "drizzle-orm";
+import _ from "lodash";
 
 export async function listProducts(req: Request, res: Response) {
   try {
@@ -39,10 +40,10 @@ export async function createProduct(
   try {
     const [product] = await db
       .insert(productsTable)
-      .values(req.body)
+      .values(req.cleanBody)
       .returning();
 
-    res.status(201).json(product);
+    res.status(201).json({ message: "Product is created!", product });
   } catch (error) {
     console.log(`Error::: ${error}`);
     next();
@@ -52,7 +53,7 @@ export async function createProduct(
 export async function updateProduct(req: Request, res: Response) {
   try {
     const { id } = req.params;
-    const updatePayload = req.body;
+    const updatePayload = req.cleanBody;
 
     const [product] = await db
       .update(productsTable)
@@ -61,7 +62,7 @@ export async function updateProduct(req: Request, res: Response) {
       .returning();
 
     if (product) {
-      res.status(200).json(product);
+      res.status(200).send({ message: "Product is updated!", product });
     } else {
       res.status(404).send({ message: "Product not found!" });
     }
@@ -79,11 +80,13 @@ export async function deleteProduct(req: Request, res: Response) {
       .where(eq(productsTable.id, Number(id)))
       .returning();
 
-    if (!deleteProduct) {
+    if (!deletedProduct) {
       res.status(404).json({ message: "No data found!" });
     }
 
-    res.status(200).json(deleteProduct);
+    res
+      .status(200)
+      .json({ message: "Product deleted!", details: deletedProduct });
   } catch (error) {
     res.send(500).send(error);
   }
